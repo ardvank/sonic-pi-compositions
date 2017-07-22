@@ -1,6 +1,9 @@
 # Em9
 # ***
-# Coded by Ard Vank with Sonic Pi v2.10
+# Coded by Ard Vank with Sonic Pi v2.10.
+# Listen to this track on Soundcloud:
+# https://soundcloud.com/ardvank/em9-sonic-pi
+
 
 use_bpm 60
 use_debug false
@@ -8,7 +11,7 @@ use_debug false
 
 # INDEX
 # *****
-
+#
 # FUNCTIONS
 # =========
 # guitar glitch drone function
@@ -81,7 +84,7 @@ end
 
 
 # guitar loop drone function
-# ---------------------------
+# --------------------------
 define :guit_loop_drone do |voice, vowel|
   with_fx :lpf, cutoff: rrand(95, 120) do
     with_fx :vowel, voice: voice, vowel_sound: vowel do
@@ -125,7 +128,7 @@ end
 
 
 # pad hi function (:hollow)
-# -----------------
+# ---------------
 define :padhi do |dur, noot|
   attack_value = rrand(0.75, 1) * dur
   release_value = 2.25
